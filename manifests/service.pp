@@ -15,7 +15,6 @@ class zookeeper::service inherits zookeeper {
     supervisor::service {
       $service_name:
         ensure                 => $service_ensure,
-        enable                 => $service_enable,
         command                => $command,
         directory              => '/',
         user                   => $user,
